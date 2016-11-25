@@ -22,7 +22,7 @@ public class DuoUser: NSObject {
         super.init()
     }
 
-    init?(rawJson:[String:AnyObject]) {
+    public init?(rawJson:[String:AnyObject]) {
         super.init()
         
         if let newUserName = rawJson["username"] as? String {
