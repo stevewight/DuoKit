@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DuoUser: NSObject {
+public class DuoUser: NSObject {
     
     var username = ""
     var created = ""

@@ -13,7 +13,7 @@ protocol DuoClientDelegate {
     func successLoadingUser()
 }
 
-class DuoClient: NSObject {
+public class DuoClient: NSObject {
     
     static let sharedInstance = {
         return DuoClient()
