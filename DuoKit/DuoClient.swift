@@ -23,6 +23,8 @@ public class DuoClient: NSObject {
     public var currentUser = ""
     public var duoUser = DuoUser()
     
+    private override init() { }
+    
     public func loadDuoUser(success:@escaping (_ newUser:DuoUser)->Void, failure:@escaping ()->Void) {
         let userURL = baseURL + "users/\(currentUser)"
        
