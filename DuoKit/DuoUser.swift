@@ -18,7 +18,7 @@ public class DuoUser: NSObject {
     var lingots = 0
     var dailyGoal = 0
     
-    override init() {
+    public override init() {
         super.init()
     }
 
