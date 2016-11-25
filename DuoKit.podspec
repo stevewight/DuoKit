@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT" }
   s.author       = { "Steve Wight" => "stevendouglaswight@gmail.com" }
   s.platform     = :ios, "10.0"
-  s.source     = { :git => "https://github.com/stevewight/DuoKit.git" }
+  s.source     = { :git => "https://github.com/stevewight/DuoKit.git", :tag => "0.0.1" }
   s.source_files = "DuoKit", "DuoKit/**/*.{h,m,swift}"
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3' }
   s.dependency "Alamofire", "~> 4.0"
