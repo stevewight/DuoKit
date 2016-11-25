@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DuoLanguage: NSObject {
+public class DuoLanguage: NSObject {
 
     var streak = 0
     var fluencyScore = 0.0
@@ -20,11 +20,11 @@ class DuoLanguage: NSObject {
     var duoLevel = DuoLevel()
     var nextSkillTitle = ""
  
-    override init() {
+    public override init() {
         super.init()
     }
     
-    init?(rawJson:[String:AnyObject]) {
+    public init?(rawJson:[String:AnyObject]) {
         super.init()
         
         if let newStreak = rawJson["streak"] as? Int {

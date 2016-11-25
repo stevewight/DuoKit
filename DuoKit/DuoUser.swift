@@ -57,7 +57,7 @@ public class DuoUser: NSObject {
         }
     }
     
-    func duoLanguage()->DuoLanguage {
+    public func duoLanguage()->DuoLanguage {
         if duoLanguages.count > 0 {
             return duoLanguages[learningLanguage]!
         } else {

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DuoLevel: NSObject {
+public class DuoLevel: NSObject {
 
     var progress = 0
     var left = 0
@@ -16,11 +16,11 @@ class DuoLevel: NSObject {
     var current = 0
     var next = 0
     
-    override init() {
+    public override init() {
         super.init()
     }
     
-    init?(rawJson:[String:AnyObject]) {
+    public init?(rawJson:[String:AnyObject]) {
         
         if let newProgress = rawJson["level_progress"] as? Int {
             progress = newProgress
@@ -43,7 +43,7 @@ class DuoLevel: NSObject {
         }
     }
     
-    func levelPercent()->Double {
+    public func levelPercent()->Double {
         let progressDouble = Double(progress)
         let totalDouble = Double(points)
         return progressDouble/totalDouble

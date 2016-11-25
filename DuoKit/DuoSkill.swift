@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DuoSkill: NSObject {
+public class DuoSkill: NSObject {
 
     var languageString = ""
     var iconColor = ""
@@ -20,7 +20,7 @@ class DuoSkill: NSObject {
     var progressPercent = 0
     var isMastered = false
     
-    init?(rawJson:[String:AnyObject]) {
+    public init?(rawJson:[String:AnyObject]) {
         super.init()
         
         if let newLanguageSkill = rawJson["language_string"] as? String {

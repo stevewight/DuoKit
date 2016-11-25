@@ -15,7 +15,7 @@ protocol DuoClientDelegate {
 
 public class DuoClient: NSObject {
     
-    static let sharedInstance = {
+    public static let sharedInstance = {
         return DuoClient()
     }()
 
@@ -23,7 +23,7 @@ public class DuoClient: NSObject {
     var currentUser = ""
     var duoUser = DuoUser()
     
-    func loadDuoUser(success:@escaping (_ newUser:DuoUser)->Void, failure:@escaping ()->Void) {
+    public func loadDuoUser(success:@escaping (_ newUser:DuoUser)->Void, failure:@escaping ()->Void) {
         let userURL = baseURL + "users/\(currentUser)"
        
         Alamofire.request(userURL).responseJSON { (response) in
