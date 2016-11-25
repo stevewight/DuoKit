@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		AAECCB4E1DE7DB1C004B7275 /* DuoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AAECCB4C1DE7DB1C004B7275 /* DuoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAECCB5A1DE7DC74004B7275 /* DuoClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB541DE7DC74004B7275 /* DuoClient.swift */; };
+		AAECCB5B1DE7DC74004B7275 /* DuoImprovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB551DE7DC74004B7275 /* DuoImprovement.swift */; };
+		AAECCB5C1DE7DC74004B7275 /* DuoLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB561DE7DC74004B7275 /* DuoLanguage.swift */; };
+		AAECCB5D1DE7DC74004B7275 /* DuoLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB571DE7DC74004B7275 /* DuoLevel.swift */; };
+		AAECCB5E1DE7DC74004B7275 /* DuoSkill.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB581DE7DC74004B7275 /* DuoSkill.swift */; };
+		AAECCB5F1DE7DC74004B7275 /* DuoUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB591DE7DC74004B7275 /* DuoUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AAECCB491DE7DB1C004B7275 /* DuoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DuoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAECCB4C1DE7DB1C004B7275 /* DuoKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DuoKit.h; sourceTree = "<group>"; };
 		AAECCB4D1DE7DB1C004B7275 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAECCB541DE7DC74004B7275 /* DuoClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuoClient.swift; sourceTree = "<group>"; };
+		AAECCB551DE7DC74004B7275 /* DuoImprovement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuoImprovement.swift; sourceTree = "<group>"; };
+		AAECCB561DE7DC74004B7275 /* DuoLanguage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuoLanguage.swift; sourceTree = "<group>"; };
+		AAECCB571DE7DC74004B7275 /* DuoLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuoLevel.swift; sourceTree = "<group>"; };
+		AAECCB581DE7DC74004B7275 /* DuoSkill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuoSkill.swift; sourceTree = "<group>"; };
+		AAECCB591DE7DC74004B7275 /* DuoUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuoUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +58,12 @@
 		AAECCB4B1DE7DB1C004B7275 /* DuoKit */ = {
 			isa = PBXGroup;
 			children = (
+				AAECCB541DE7DC74004B7275 /* DuoClient.swift */,
+				AAECCB551DE7DC74004B7275 /* DuoImprovement.swift */,
+				AAECCB561DE7DC74004B7275 /* DuoLanguage.swift */,
+				AAECCB571DE7DC74004B7275 /* DuoLevel.swift */,
+				AAECCB581DE7DC74004B7275 /* DuoSkill.swift */,
+				AAECCB591DE7DC74004B7275 /* DuoUser.swift */,
 				AAECCB4C1DE7DB1C004B7275 /* DuoKit.h */,
 				AAECCB4D1DE7DB1C004B7275 /* Info.plist */,
 			);
@@ -96,6 +114,7 @@
 					AAECCB481DE7DB1C004B7275 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 47V5P5JJNR;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,6 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAECCB5A1DE7DC74004B7275 /* DuoClient.swift in Sources */,
+				AAECCB5F1DE7DC74004B7275 /* DuoUser.swift in Sources */,
+				AAECCB5D1DE7DC74004B7275 /* DuoLevel.swift in Sources */,
+				AAECCB5C1DE7DC74004B7275 /* DuoLanguage.swift in Sources */,
+				AAECCB5B1DE7DC74004B7275 /* DuoImprovement.swift in Sources */,
+				AAECCB5E1DE7DC74004B7275 /* DuoSkill.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +265,7 @@
 		AAECCB521DE7DB1C004B7275 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 47V5P5JJNR;
@@ -252,6 +278,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = sw.DuoKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -259,6 +286,7 @@
 		AAECCB531DE7DB1C004B7275 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 47V5P5JJNR;
