@@ -10,8 +10,8 @@ import UIKit
 
 public class DuoImprovement: NSObject {
     
-    var value = 0
-    var datetime = Date()
+    public var value = 0
+    public var datetime = Date()
 
     public init?(rawJson:[String:AnyObject]) {
         super.init()

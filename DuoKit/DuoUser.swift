@@ -10,13 +10,13 @@ import UIKit
 
 public class DuoUser: NSObject {
     
-    var username = ""
-    var created = ""
-    var streakExtendedToday = false
-    var learningLanguage = ""
-    var duoLanguages = [String:DuoLanguage]()
-    var lingots = 0
-    var dailyGoal = 0
+    public var username = ""
+    public var created = ""
+    public var streakExtendedToday = false
+    public var learningLanguage = ""
+    public var duoLanguages = [String:DuoLanguage]()
+    public var lingots = 0
+    public var dailyGoal = 0
     
     public override init() {
         super.init()

@@ -10,11 +10,11 @@ import UIKit
 
 public class DuoLevel: NSObject {
 
-    var progress = 0
-    var left = 0
-    var points = 0
-    var current = 0
-    var next = 0
+    public var progress = 0
+    public var left = 0
+    public var points = 0
+    public var current = 0
+    public var next = 0
     
     public override init() {
         super.init()

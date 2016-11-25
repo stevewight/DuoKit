@@ -10,15 +10,15 @@ import UIKit
 
 public class DuoSkill: NSObject {
 
-    var languageString = ""
-    var iconColor = ""
-    var title = ""
-    var learned = false
-    var index = 0
-    var isBonus = false
-    var short = ""
-    var progressPercent = 0
-    var isMastered = false
+    public var languageString = ""
+    public var iconColor = ""
+    public var title = ""
+    public var learned = false
+    public var index = 0
+    public var isBonus = false
+    public var short = ""
+    public var progressPercent = 0
+    public var isMastered = false
     
     public init?(rawJson:[String:AnyObject]) {
         super.init()

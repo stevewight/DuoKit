@@ -19,9 +19,9 @@ public class DuoClient: NSObject {
         return DuoClient()
     }()
 
-    let baseURL = "https://api.duolingo.com/"
-    var currentUser = ""
-    var duoUser = DuoUser()
+    public let baseURL = "https://api.duolingo.com/"
+    public var currentUser = ""
+    public var duoUser = DuoUser()
     
     public func loadDuoUser(success:@escaping (_ newUser:DuoUser)->Void, failure:@escaping ()->Void) {
         let userURL = baseURL + "users/\(currentUser)"
