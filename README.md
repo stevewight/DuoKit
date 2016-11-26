@@ -1,5 +1,5 @@
 # DuoKit
-Swift 3 wrapper for the **_Unofficial Duolingo API_**
+**_Swift 3_** wrapper for the **_Unofficial Duolingo API_**
 
 ## Installation
 The easiest way to use DuoKit is with CocoaPods
@@ -68,7 +68,7 @@ client.loadDuoUser(success: { (duoUser) in
 ### Accessing User Information
 The DuoUser is the entry point of all the users data and therefore the starting point for accessing all other objects:
 ```swift
-// The duoUser object is accessed from the 'DuoClient' object returning 'success' (see above)
+// The DuoUser object is accessed from the DuoClients 'success' closure (see above)
 
 // returns the current language the user is learning
 let duoLanguage = duoUser.duoLanguage()
@@ -84,9 +84,9 @@ let duoImprovments = duoLanguage.improvements
 
 ```
 
-There is additional information within each of these objects.  I recommend digging through the above model objects to find all available properties.
+There are additional data points within each of these objects.  I recommend digging through the above model classes to find all available properties.
 
 ## License
 
-DuoKit is released under the MIT license. See LICENSE for details.
+DuoKit is released under the ***MIT*** license. See LICENSE for details.
 
