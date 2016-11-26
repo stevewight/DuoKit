@@ -38,7 +38,7 @@ $ pod install
 * [`DuoLanguage`](https://github.com/stevewight/DuoKit/blob/master/DuoKit/DuoLanguage.swift)
   - Information about a single language the user is learning
   - Has a collection of `DuoSkill` objects
-  - Has a signle `DuoLevel` object
+  - Has a single `DuoLevel` object
   - Has a collection of `DuoImprovement` objects
 * [`DuoSkill`](https://github.com/stevewight/DuoKit/blob/master/DuoKit/DuoSkill.swift)
   - Represents a single skill within a language the user is learning
