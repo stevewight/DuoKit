@@ -64,12 +64,15 @@ client.loadDuoUser(success: { (duoUser) in
   print("Failed to load user, try again")
 }
 ```
+### Accessing the DuoUser
+```swift
+// From anywhere in your application using:
+let duoUser = DuoClient.sharedInstance.duoUser
+```
 
 ### Accessing User Information
 The DuoUser is the entry point of all the users data and therefore the starting point for accessing all other objects:
 ```swift
-// The DuoUser object is accessed from the DuoClients 'success' closure (see above)
-
 // returns the current language the user is learning
 let duoLanguage = duoUser.duoLanguage()
 
@@ -79,9 +82,8 @@ let duoSkills = duoLanguage.skills
 // returns a single duoLevel object
 let duoLevel = duoLanguage.duoLevel
 
-// returns an array of all DuoImprovment (Note: the api only returns the last 7 days of improvments)
+// returns an array of all DuoImprovment objects (Note: the api only returns the last 7 days of improvments)
 let duoImprovments = duoLanguage.improvements
-
 ```
 
 There are additional data points within each of these objects.  I recommend digging through the above model classes to find all available properties.
