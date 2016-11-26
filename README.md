@@ -25,20 +25,20 @@ $ pod install
 
 ### Client
 
-- 'DuoClient'
+- `DuoClient`
   - Singleton object for making network calls to the API
 
 ### Models
 
-* 'DuoUser'
+* `DuoUser`
   - Base information about the Duolingo user
-* 'DuoLanguage'
+* `DuoLanguage`
   - Information about a single language the user is learning
-* 'DuoSkill'
+* `DuoSkill`
   - Represents a single skill within a language the user is learning
-* 'DuoLevel'
+* `DuoLevel`
   - Information for the current users level (i.e. current level, points to next level)
-* 'DuoImprovement'
+* `DuoImprovement`
   - Value the user gained and the datetime they achieved it
   
 ## Usage
@@ -60,7 +60,7 @@ client.loadDuoUser(success: { (duoUser) in
 ```
 
 ### Accessing User Information
-The DuoUser is the starting point of all the users data and therefore the starting point for accessing all other objects:
+The DuoUser is the entry point of all the users data and therefore the starting point for accessing all other objects:
 ```swift
 // The duoUser object is accessed from the 'DuoClient' object returning 'success' (see above)
 
@@ -77,4 +77,6 @@ let duoLevel = duoLanguage.duoLevel
 let duoImprovments = duoLanguage.improvements
 
 ```
+
+There is additional information within each of these objects.  I recommend digging through the above model objects to find all properties.
 
