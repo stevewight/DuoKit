@@ -1,5 +1,5 @@
 # DuoKit
-Swift 3 wrapper for the unofficial Duolingo API
+Swift 3 wrapper for the **_Unofficial Duolingo API_**
 
 ## Installation
 The easiest way to use DuoKit is with CocoaPods
@@ -23,32 +23,30 @@ $ pod install
 
 ## Architecture
 
-### UML Diagram of Object Model
-
 ![uml diagram of DuoKits object model](https://github.com/stevewight/DuoKit/blob/master/images/duo_kit-uml.png)
 
 ### Client
 
-- `DuoClient`
+- [`DuoClient`](https://github.com/stevewight/DuoKit/blob/master/DuoKit/DuoClient.swift)
   - Singleton object for making network calls to the API
   - Has a single `DuoUser` object
 
 ### Models
 
-* `DuoUser`
+* [`DuoUser`](https://github.com/stevewight/DuoKit/blob/master/DuoKit/DuoUser.swift)
   - Base information about the Duolingo user
   - Has a collection of `DuoLanguage` objects 
-* `DuoLanguage`
+* [`DuoLanguage`](https://github.com/stevewight/DuoKit/blob/master/DuoKit/DuoLanguage.swift)
   - Information about a single language the user is learning
   - Has a collection of `DuoSkill` objects
   - Has a signle `DuoLevel` object
   - Has a collection of `DuoImprovement` objects
-* `DuoSkill`
+* [`DuoSkill`](https://github.com/stevewight/DuoKit/blob/master/DuoKit/DuoSkill.swift)
   - Represents a single skill within a language the user is learning
-* `DuoLevel`
+* [`DuoLevel`](https://github.com/stevewight/DuoKit/blob/master/DuoKit/DuoLevel.swift)
   - Information for the current users level (i.e. current level, points to next level)
-* `DuoImprovement`
-  - Value the user gained and the datetime they achieved it
+* [`DuoImprovement`](https://github.com/stevewight/DuoKit/blob/master/DuoKit/DuoImprovement.swift)
+  - XP points the user gained and the datetime they achieved it
   
 ## Usage
 
@@ -87,5 +85,9 @@ let duoImprovments = duoLanguage.improvements
 
 ```
 
-There is additional information within each of these objects.  I recommend digging through the above model objects to find all properties.
+There is additional information within each of these objects.  I recommend digging through the above model objects to find all available properties.
+
+## License
+
+DuoKit is released under the MIT license. See LICENSE for details.
 
