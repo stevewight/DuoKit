@@ -1,5 +1,5 @@
 # DuoKit
-Unofficial swift wrapper for the Duolingo API
+Swift 3 wrapper for the unofficial Duolingo API
 
 ## Installation
 The easiest way to use DuoKit is with CocoaPods
@@ -23,17 +23,26 @@ $ pod install
 
 ## Architecture
 
+### UML Diagram of Object Model
+
+![uml diagram of DuoKits object model](https://github.com/stevewight/DuoKit/blob/master/images/duo_kit-uml.png)
+
 ### Client
 
 - `DuoClient`
   - Singleton object for making network calls to the API
+  - Has a single `DuoUser` object
 
 ### Models
 
 * `DuoUser`
   - Base information about the Duolingo user
+  - Has a collection of `DuoLanguage` objects 
 * `DuoLanguage`
   - Information about a single language the user is learning
+  - Has a collection of `DuoSkill` objects
+  - Has a signle `DuoLevel` object
+  - Has a collection of `DuoImprovement` objects
 * `DuoSkill`
   - Represents a single skill within a language the user is learning
 * `DuoLevel`
