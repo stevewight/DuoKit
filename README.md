@@ -7,7 +7,6 @@ The easiest way to use DuoKit is with CocoaPods
 To integrate DuoKit into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '10.0'
 
 target 'TargetName' do
@@ -46,7 +45,7 @@ $ pod install
 * [`DuoLevel`](https://github.com/stevewight/DuoKit/blob/master/DuoKit/DuoLevel.swift)
   - Information for the current users level (i.e. current level, points to next level)
 * [`DuoImprovement`](https://github.com/stevewight/DuoKit/blob/master/DuoKit/DuoImprovement.swift)
-  - XP points the user gained and the datetime they achieved it
+  - XP the user gained and the datetime they achieved it
   
 ## Usage
 
