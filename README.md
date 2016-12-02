@@ -88,6 +88,8 @@ let duoImprovments = duoLanguage.improvements
 
 There are additional data points within each of these objects.  I recommend digging through the above model classes to find all available properties.
 
+Also take a look at [Linguist](https://github.com/stevewight/Linguist) for an example of usage and data points available when using DuoKit.
+
 ## License
 
 DuoKit is released under the ***MIT*** license. See LICENSE for details.
